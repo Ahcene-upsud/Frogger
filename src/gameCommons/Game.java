@@ -77,9 +77,11 @@ public class Game {
 	 */
 	public boolean testLose() {
 		// TODO
-		if(!environment.isSafe(frog.getPosition())){
+		if(environment.isSafe(frog.getPosition())!= true){
+			graphic.endGameScreen("defaite");
 			return true ;
 		}
+
 		return false;
 	}
 
@@ -92,6 +94,7 @@ public class Game {
 	public boolean testWin() {
 		// TODO
 	if(environment.isWinningPosition(frog.getPosition()))	{
+		graphic.endGameScreen("victoire");
 		return true ;
 	}
 		return false;
