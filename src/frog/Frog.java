@@ -16,7 +16,7 @@ import java.awt.event.KeyListener;
 public class Frog implements IFrog   {
 	private Game game;
 	private Direction sens;
-	private Position ad;
+	//private Position ad;
 	private Case p;
 
 	public Frog(Game newGame){
